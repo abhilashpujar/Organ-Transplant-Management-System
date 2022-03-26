@@ -14,14 +14,14 @@
       <div class="form-container sign-up-container">
         <form action = /add_User method = 'GET'>
           <h1>Sign Up</h1>
-          <input type="text" placeholder="User ID" name = "User_ID"/>        
-          <input type="text" placeholder="Name" name = "Name"/>        
+          <input type="number" placeholder="User ID" name = "User_ID"/>        
+          <input type="text" pattern="[A-Za-z]+" placeholder="Name" name = "Name"/>        
           <input type="dob" placeholder="Date of Birth" name = "Date_of_Birth"/>
-          <input type="medicalins" placeholder="Medical Insurance" name = "Medical_insurance"/>
-          <input type="medicalhis" placeholder="Medical History" name = "Medical_history"/>  
+          <input type="number" pattern="[0-1]" placeholder="Medical Insurance" name = "Medical_insurance"/>
+          <input type="medicalhis" pattern="[A-Za-z]+" placeholder="Medical History" name = "Medical_history"/>  
           <input type="street" placeholder="Street" name = "Street"/>  
-          <input type="city" placeholder="City" name = "City"/>         
-          <input type="state" placeholder="State" name = "State"/>
+          <input type="city" pattern="[A-Za-z]+" placeholder="City" name = "City"/>         
+          <input type="state" pattern="[A-Za-z]+" placeholder="State" name = "State"/>
           <button>Sign Up</button>
         </form>
       </div>
